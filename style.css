@@ -1,0 +1,125 @@
+*,*::before,*::after{padding: 0;margin: 0;border: 0;box-sizing: border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;}
+:focus,:active{outline: none;}
+a:focus,a:active{outline:none;}
+nav,footer,header,aside{display: block;}
+a{text-decoration: none;}
+ul,ol,li{list-style: none;}
+h1,h2,h3,h4,h5,h6{font-weight: inherit;font-size:inherit;}
+html{box-sizing: border-box;height:100%;width: 100%;font-size: 100%;-ms-text-size-adjust: 100%; overflow-x: hidden;}
+input,button,textarea{font-family: inherit;}
+input::-ms-clear{display:none}
+button{cursor:pointer}
+button::-moz-focus-inner{ padding:0; border:0;}
+a,a:visited{text-decoration: none; color: inherit}
+a:hover{text-decoration: none;}
+img{vertical-align: top;}
+
+body{
+    background-color: rgb(78, 64, 64);
+    padding-bottom:30px ;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+[class*="__container"]{
+    min-height: 550px;
+    height: auto;
+    width: 900px;
+    padding: 20px;
+    /* position: absolute; */
+    /* top:50%;
+    left:50%; */
+    /* margin: -190px 0 50px -450px; */
+    background-color: bisque;
+    border-radius: 15px;
+    box-shadow:0px 0px 20px 4px rgb(36, 33, 27);
+}
+.header{
+    color: rgb(16, 156, 180);
+    padding: 20px 0 20px 0;
+    font-size: 60px;
+    display: flex;
+    justify-content: center;
+}
+.header_text{
+    text-shadow: 0px 0px 5px rgb(6, 52, 61);
+}
+.search_input{
+    font-size: 32px;
+    font-weight: 500;
+    color: bisque;
+    padding: 0px 0px 0px 15px;
+    width: 600px;
+    height: 50px;
+    /* position: relative;
+    top: 50px; */
+    /* left: 50%; */
+    border-radius: 15px;
+    /* margin: 0 0 0 -300px; */
+    background-color:  rgb(78, 64, 64);
+    box-shadow:0px 0px 1px 1px rgb(118, 107, 94);
+}
+.search_box{
+    margin: 50px 0px 0px 0px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.repositories_list{
+}
+
+.found_repositories{
+    margin: 10px 0px 0px 0px;
+    border-radius: 15px;
+    background-color: rgba(232, 105, 51, 0.731);
+    width: 590px;
+}
+.repository{
+    padding-left: 8px;
+    cursor: default;
+    border-radius: 8px;
+    margin: 0px 10px 4px 10px;
+    font-size: 24px;
+    color:bisque;
+    letter-spacing: 2px;
+}
+.repository:first-child{
+    margin: 10px 10px 4px 10px;
+}
+.repository:hover{
+    background-color:rgb(78, 64, 64);
+}
+
+.added_repository{
+
+}
+
+.delete_img{
+
+}
+
+.repositories_list{
+    margin: 30px 0px 0px 250px;
+}
+
+.added_repository{
+    border-radius: 20px;
+    position: relative;
+    width: 400px;
+    padding: 10px;
+    background-color:rgb(16, 156, 180);
+    font-size: 24px;
+    color: bisque;
+}
+.added_repository:not(:last-child){
+    margin: 0px 0px 20px 0px;
+}
+
+.added_repository img{
+    position: absolute;
+    top:30%;
+    left:80%;
+    height: 50px;
+    width: 50px;
+}
